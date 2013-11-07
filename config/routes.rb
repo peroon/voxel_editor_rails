@@ -1,4 +1,6 @@
 VoxelEditorRails::Application.routes.draw do
+  resources :voxels
+
   resources :users
 =begin
   get "users/index"
