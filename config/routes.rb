@@ -1,4 +1,6 @@
 VoxelEditorRails::Application.routes.draw do
+  root 'voxels#index'
+
   resources :voxels
 
   resources :users
