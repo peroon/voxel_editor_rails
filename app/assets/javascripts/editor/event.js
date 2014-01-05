@@ -48,8 +48,8 @@ function onDocumentKeyDown( event ) {
 		//アローキー
 		case KEY_LEFT:
 		case KEY_RIGHT:
-		case KEY_UP:
-		case KEY_DOWN:
+		//case KEY_UP:
+		//case KEY_DOWN:
 			g_pressedArrowKey = event.keyCode;
 			break;
 	}
