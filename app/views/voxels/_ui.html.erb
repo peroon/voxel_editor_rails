@@ -14,8 +14,15 @@
     <!-- キューブ全消去	 -->
     <a class="btn btn-danger btn-block" onClick="clearAllCube()">Clear all cube</a>
 
-    <a id="demo_button"   onClick="toggleDemo()"   class="btn btn-primary btn-block">Start Demo</a>
-    <a id="mirror_button" onClick="toggleMirror()" class="btn btn-warning btn-block">Start Mirror</a>
+    <!--デモ（回転）開始-->
+    <a id="demo_button"   onClick="toggleDemo()"   class="btn btn-primary btn-block">
+        <i class="icon-play"></i>
+        Start Demo
+    </a>
+    <a id="mirror_button" onClick="toggleMirror()" class="btn btn-warning btn-block">
+        <i class="icon-play"></i>
+        Start Mirror
+    </a>
 
     <!-- 保存 -->
     <a data-toggle="modal" href="#saveModal"
