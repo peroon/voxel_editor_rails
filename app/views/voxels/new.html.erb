@@ -1,5 +1,5 @@
 <head>
-  <%= render 'commonCDN' %>
+	<%= render 'commonCDN' %>
 </head>
 
 <script>
@@ -12,13 +12,13 @@ $(function(){
 	if (window.addEventListener)
 	        window.addEventListener('DOMMouseScroll', onMouseWheel, false);//Mozilla
 			window.onmousewheel = document.onmousewheel = onMouseWheel;//IE,Opera,Chrome
-	});
+		});
 
 //右クリックでコンテキストメニュー出さない
 $(document).ready(function(){
-  $(document).bind("contextmenu",function(e){
-    return false;
-  });
+	$(document).bind("contextmenu",function(e){
+		return false;
+	});
 });
 
 //デモON/OFF
@@ -45,11 +45,11 @@ function toggleMirror(){
 </script>
 
 <body>
-  <div id="container">
-	  <%= render :partial => 'voxels/new/debugview' %>
-	  <%= render :partial => 'ui' %>
-	  <% render :partial => 'voxels/new/ui' %>
-  </div>
+	<div id="container">
+		<%= render :partial => 'voxels/new/debugview' %>
+		<%= render :partial => 'ui' %>
+		<% render :partial => 'voxels/new/ui' %>
+	</div>
 </body>
 
 
