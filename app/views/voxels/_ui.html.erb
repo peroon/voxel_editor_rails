@@ -1,5 +1,9 @@
 <!-- UI -->
 <div id="ui_base">
+    <a class="btn btn-danger btn-block" onClick="clearAllCube()">
+        <i class="icon-list"></i>
+        Show/Hide UI
+    </a>
 
     <!-- color picker -->
     <div id="color_picker_ui">
@@ -11,8 +15,14 @@
         cube num : <span class="badge badge-success">0</span>
     </div>
 
+    <%= render :partial => 'voxels/new/ui/manual' %>
+    <%= render :partial => 'voxels/new/ui/sound' %>
+
     <!-- キューブ全消去	 -->
-    <a class="btn btn-danger btn-block" onClick="clearAllCube()">Clear all cube</a>
+    <a class="btn btn-danger btn-block" onClick="clearAllCube()">
+        <i class="icon-eraser"></i>
+        Clear all cube
+    </a>
 
     <!--デモ（回転）開始-->
     <a id="demo_button"   onClick="toggleDemo()"   class="btn btn-primary btn-block">
@@ -145,6 +155,4 @@
     T : UI表示/非表示<br>
     右クリック+ドラッグ : 視点回転<br>
     中クリックでスクロール : 視点拡大縮小
-    <div>	
-
-    </div>
+<div>	

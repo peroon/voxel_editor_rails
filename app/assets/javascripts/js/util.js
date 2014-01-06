@@ -1,7 +1,3 @@
-function p(v){
-	console.log(v);
-}
-
 function getImageCube(){
 	var path = './me_avater.jpg';
 	var materials = [

@@ -15,6 +15,7 @@ class VoxelsController < ApplicationController
   # GET /voxels/new
   def new
     @voxel = Voxel.new
+
   end
 
   # GET /voxels/1/edit

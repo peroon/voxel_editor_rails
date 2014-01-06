@@ -291,7 +291,6 @@ $(function(){
 					g_cubeMaterial = g_selectedMaterial;
 
 					//ボクセル実体化
-					p(voxelPosition);
 					makeVoxel(voxelPosition, g_cubeMaterial);
 
 					//ミラー
@@ -329,13 +328,12 @@ $(function(){
 					var g255 = color_threejs.g * 255;
 					var b255 = color_threejs.b * 255;
 					var color_sharp = '#' + zero2(r255.toString(16)) + zero2(g255.toString(16)) + zero2(b255.toString(16));
-					p(color_sharp);
 					changeColorOfCube(sharpTo0x(color_sharp));
 				}
 			}
 		}
 		else{
-			p('mouse center clicked');
+			console.log('mouse center clicked');
 		}
 	}
 
