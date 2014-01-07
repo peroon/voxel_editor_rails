@@ -69,27 +69,7 @@
                     <h4 class="modal-title">データをサーバにアップロードしますか？</h4>
                 </div>
 
-                <form 
-                accept-charset="UTF-8" 
-                action="http://192.168.33.10:3000/voxel/create"
-                class="new_voxeljson" 
-                id="new_voxeljson" 
-                method="post">
-                <div style="margin:0;padding:0;display:inline">
-                    <input name="utf8" type="hidden" value="✓">
-                    <input name="authenticity_token" type="hidden" value="vRFl2PUhw9v6e2gh402idJJcOlcvAsUpTz7n5nZ6+yY=">
-                </div>
-
-                <div class="modal-body">
-                    <!-- 送信内容 -->
-                    <textarea id="submitData" name="voxeljson[json]" style="width:550px; height:400px"></textarea>
-                </div>
-
-                <div class="modal-footer">
-                    <!-- 送信ボタン -->
-                    <input class="btn btn-primary" name="commit" type="submit" value="Submit">
-                </div>
-            </form>
+              <%= render 'form_filled' %>
 
         </div>
     </div>
@@ -155,4 +135,4 @@
     T : UI表示/非表示<br>
     右クリック+ドラッグ : 視点回転<br>
     中クリックでスクロール : 視点拡大縮小
-<div>	
+<div>

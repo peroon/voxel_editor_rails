@@ -13,15 +13,15 @@
 
   <div class="field">
     user_id<br>
-    <%= f.number_field :user_id %>
+    <%= f.number_field :user_id, {:value=>1}%>
   </div>
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title, :size=>100 %>
+    <%= f.text_field :title, :size=>100, :value=>'my title' %>
   </div>
   <div class="field">
     <%= f.label :data_json %><br>
-    <%= f.text_area :data_json, :cols=>10, :rows=>2 %>
+    <%= f.text_area :data_json, :cols=>10, :rows=>2, :value=>'aaa' %>
   </div>
   <div class="actions">
     <%= f.submit %>
