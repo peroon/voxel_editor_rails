@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @voxeldummy.user_id %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @voxeldummy.title %>
+</p>
+
+<p>
+  <strong>Data json:</strong>
+  <%= @voxeldummy.data_json %>
+</p>
+
+<%= link_to 'Edit', edit_voxeldummy_path(@voxeldummy) %> |
+<%= link_to 'Back', voxeldummies_path %>

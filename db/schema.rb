@@ -11,11 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131107155832) do
+ActiveRecord::Schema.define(version: 20140107150623) do
 
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "password_digest"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "voxeldummies", force: true do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.text     "data_json"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
